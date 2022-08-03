@@ -1,0 +1,49 @@
+This is my face!!!
+GIT
+Repo là gì?
+-1 dự án, nơi chứa toàn bộ source code
+-Có rất nhiều commit
+Commit
+-Thay đổi code thì sẽ được gọi là 1 commit
+-Xem được lịch sử sửa, xóa, update source code
+Branch
+-Tách nhánh để dễ làm và quản lí từng phần
+
+-----------------------------------------------------------------------------------------------------------
+1. Tạo repo
+2. cmd trên terminal
+
+$ git init                                    --tạo một repo ở máy
+
+$ git status                                  --xem trạng thái các file
+
+$ git add <file name>                         --thêm file vào repo
+
+$ git status                                  --kiểm tra trạng thái của file
+
+$ git commit -m "commit content"              --gắn nội dung commit
+
+$ git log                                     --kiểm tra file đã được gắn vào local chưa
+
+$ git remote add origin <link repo github>    --trỏ đường đi cho file đến repo của github
+
+$ git push -u origin main                     --đồng bộ code ở local lên github
+
+------------------------------------------------------------------------------------------------------------
+# khi sửa file muốn update lên main của git
+$ git add .                                   --để chọn tất cả các file-nhưng thường sẽ chỉ add file muốn push
+
+$ git commit -m "nội dung chỉnh sửa lần này"  --gắn nội dung commit
+
+$ git checkout -b Nghia/abc                   --tạo một branch mới
+
+$ git branch                                  --để xem mình đang ở nhánh nào
+
+$ git stash                                   --để ấn những đoạn code 
+---------------------------------------------------------------------------------------------------------------
+
+#Xóa folder 
+git checkout master
+git rm -r folder-name
+git commit -m "Remove duplicated directory"
+git push origin master
